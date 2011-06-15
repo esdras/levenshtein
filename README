@@ -1,0 +1,14 @@
+The levenshtein module implements fast Damerau-Levenshtein edit distance computation in O(n) memory and O(n^2) time, using a C wrapper.
+
+USAGE:
+
+@install
+git clone git://github.com/esdras/levenshtein.git
+cd levenshtein
+rake compile
+rake install
+
+@usage
+require 'levenshtein'
+Levenshtein.normalized_distance("string 1", "string 2")
+Levenshtein.normalized_distance([2, 3, 4, 5], [1, 2, 3, 4])
