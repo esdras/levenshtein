@@ -1,8 +1,8 @@
 begin
-  require "levenshtein/levenshtein_fast"	# If compiled by RubyGems.
+  require "levenshtein/levenshtein_in_c"	# If compiled by RubyGems.
 rescue LoadError
   begin
-    require "levenshtein_fast"			# If compiled by the build script.
+    require "levenshtein_fast_in_c"			# If compiled by the build script.
   rescue LoadError
     $stderr.puts "WARNING: Couldn't find the fast C implementation of Levenshtein.distance. Using the much slower Ruby version instead."
   end
