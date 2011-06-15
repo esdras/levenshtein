@@ -14,7 +14,7 @@ VALUE levenshtein_distance_fast(VALUE self, VALUE rb_o1, VALUE rb_o2, VALUE rb_t
   }
 }
 
-void Init_levenshtein_fast() {
+void Init_levenshtein_in_c() {
   VALUE mLevenshtein	= rb_define_module("Levenshtein");
 
   rb_define_singleton_method(mLevenshtein, "levenshtein_distance_fast" , levenshtein_distance_fast, 3);
