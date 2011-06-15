@@ -10,8 +10,8 @@ VALUE levenshtein_distance_array_of_strings(VALUE self, VALUE rb_o1, VALUE rb_o2
 
   /* Get the sizes of both arrays. */
 
-  l1	= RARRAY(rb_o1)->as.heap.len;
-  l2	= RARRAY(rb_o2)->as.heap.len;
+  l1	= RARRAY_LEN(RARRAY(rb_o1));
+  l2	= RARRAY_LEN(RARRAY(rb_o2));
 
   /* Convert Ruby's threshold to C's threshold. */
 
