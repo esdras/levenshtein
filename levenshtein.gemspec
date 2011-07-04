@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "levenshtein/version"
 
 Gem::Specification.new do |s|
-  s.name        = "levenshtein"
+  s.name        = "levenshtein-extended"
   s.version     = Levenshtein::VERSION
   s.authors     = ["Esdras Mayrink"]
   s.email       = ["falecom@oesdras.com.br"]
