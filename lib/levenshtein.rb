@@ -1,5 +1,5 @@
 begin
-  require "levenshtein/levenshtein_in_c"	# If compiled by RubyGems.
+  require "levenshtein_in_c/levenshtein_in_c"	# If compiled by RubyGems.
 rescue LoadError
   begin
     require "levenshtein_in_c"			# If compiled by the build script.
